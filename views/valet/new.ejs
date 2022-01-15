@@ -1,0 +1,53 @@
+<% layout('layouts/boilerplate') %>
+<div class="row">
+    <h1 class="text-center">Schedule Dealership Valet Service</h1>
+    <div class="col-6 offset-3">
+        <form action="/valet" method="POST">
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="text" name="valet[title]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="make">Make</label>
+                <input class="form-control" type="text" id="make" name="valet[make]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="year">Year</label>
+                <input class="form-control" type="number" min="1900" max="2099" step="1" value="2022" id="year" name="valet[year]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="color">Color</label>
+                <input class="form-control" type="text" id="color" name="valet[color]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="liscense">Liscense Plate</label>
+                <input class="form-control" type="text" id="liscense" name="valet[liscense]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="dealership">Dealership</label>
+                <input class="form-control" type="text" id="dealership" name="valet[dealership]">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-control" type="text" id="location" name="valet[location]">
+            </div>
+
+            <div class="db-3">
+                <label class="form-label" for="price">Eminent Valet Service Fee</label>
+            <div class="input-group">
+                <span class="input-group-text" id="price-label">$</span>
+                <input type="text" class="form-control" id="price" placeholder="0" aria-label="Username" aria-describedby="basic-addon1" name="valet[price]">
+              </div>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label" for="decription">Description</label>
+                <textarea class="form-control" type="text" id="description" name="valet[description]"></textarea>
+            </div>
+            <div class="mb-3">
+            <button class="btn btn-success">Add Campground</button>
+        </div>
+        </form>
+    </div>
+</div>
+

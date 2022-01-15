@@ -1,0 +1,20 @@
+<% layout('layouts/boilerplate') %> 
+<div class="row">
+    <div class="col-6 offset-3">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"><%=valet.title %></h5>
+              <p class="card-text"><%=valet.description%></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><%=valet.dealership %> </li>
+              <li class="list-group-item">$<%=valet.price%></li>
+              <li class="list-group-item">Pickup From: <%=valet.location%></li>
+            </ul>
+            <div class="card-body">
+              <a href="/" class="card-link">All Valet-Dealerships</a>
+            </div>
+          </div>
+
+    </div>
+</div>

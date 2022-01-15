@@ -1,0 +1,20 @@
+<% layout('layouts/boilerplate') %> 
+    <h1 class="h2 text-center">Eminet Valet Dealership Partners</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <% for (let dealership of categories) {%>
+        <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><%= dealership %> </h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <a href="#" class="btn btn-primary"><%= dealership %> </a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">2590 Eglinton Ave E, Scarborough, ON M1K 2R5</small>
+              </div>
+            </div>
+          </div>
+    <% } %> 
+    </div>
+    

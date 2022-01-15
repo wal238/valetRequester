@@ -1,0 +1,15 @@
+<% layout('layouts/boilerplate') %>
+<h1>All EminentValet Outgoing Requests</h1>
+
+    <% for (let valet of valets) { %>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><%=valet.title%></h5>
+                    <p class="card-text">Plate: <%=valet.liscense%></p>
+                    <p class="card-text">Pickup Location: <%=valet.location%></p>
+                    <a class ="btn btn-primary" href="valet/service/<%=valet._id%>">View <%=valet.title%></a>
+                </div>
+            </div>
+        </div>
+        <% } %>  
